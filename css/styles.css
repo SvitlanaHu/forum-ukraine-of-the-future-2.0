@@ -1,0 +1,596 @@
+:root {
+  --cloud: #f4f4fd;
+  --cornflower: #e7e9fc;
+  --dairy: #fcfcfc;
+  --iris: #4d5ae5;
+  --green: #31d0aa;
+  --light-slate: #8e8f99;
+  --navy-blue: #2e2f42;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --ocean: #404bbf;
+  --white: #fff;
+  --slate: #434455;
+}
+
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--slate);
+  background: var(--white);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 428px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.placement-in-a-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.section {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+input {
+  font-family: inherit;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*
+=========================================
+      Header
+=========================================
+*/
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--white);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.top-line {
+  display: flex;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  position: sticky;
+  top: 0;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 115px;
+  margin-right: 76px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+}
+
+.logo-studio {
+  color: var(--navy-blue);
+}
+
+.menu-toggle {
+  border: none;
+  background-color: var(--white);
+}
+
+.navigation-box {
+  gap: 40px;
+}
+
+.text-link {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 24px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.text-link:hover,
+.text-link:focus {
+  color: var(--ocean);
+}
+
+.text-link.current {
+  color: var(--ocean);
+}
+
+.text-link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--ocean);
+}
+
+.text-link .contacts {
+  font-style: normal;
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.contact-box {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-box:hover,
+.contact-box:focus {
+  color: var(--ocean);
+}
+
+/**
+  |============================
+  | Menu window
+  |============================
+*/
+
+/* Main
+=============================================
+   1. Effective Solutions for Your Business
+=============================================
+*/
+.title-background-box {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 112px 0;
+  background: var(--navy-blue);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-images/Dark-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-resolution: 144dpi) {
+  .title-background-box {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-images/Dark-bg@1.5x.jpg");
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .title-background-box {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-images/Dark-bg@2x.jpg");
+  }
+}
+
+@media (min-resolution: 288dpi) {
+  .title-background-box {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-images/Dark-bg@3x.jpg");
+  }
+}
+
+.main-title {
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
+  font-size: 36px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.main-button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  border: none;
+  background-color: var(--iris);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: var(--ocean);
+  cursor: pointer;
+}
+
+/**
+  |============================
+  | Adaptation
+  |============================
+*/
+
+@media (max-width: 767px) {
+  .menu-hidden,
+  .social-menu-hidden,
+  .icon-box,
+  .main-opportunities-section {
+    display: none;
+  }
+  /* Header */
+  /* Mobile menu */
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    padding: 80px 35px 40px 40px;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  .close-icon {
+    border: 1px solid var(--cornflower);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex-grow: 1;
+  }
+
+  .menu-link {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    flex-grow: 1;
+  }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--ocean);
+    cursor: pointer;
+  }
+
+  .contact-mail {
+    display: block;
+    margin-bottom: 48px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.05ex;
+    color: var(--slate);
+  }
+
+  .icon-link {
+    justify-content: space-between;
+  }
+}
+
+@media (max-vidth: 427px) {
+  .contact-number {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    color: var(--iris);
+  }
+}
+
+@media (min-vidth: 428px) and (max-width: 767px) {
+  .contact-number {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1157.98px) {
+}
+
+/**
+  |============================
+  | Tablet version
+  |============================
+*/
+@media (min-width: 768px) and (max-width: 1157.98px) {
+  .contact-box {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+
+  /* Hero */
+  .title-background-box {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-images/dark-tablet-bg.jpg);
+  }
+
+  @media (min-resolution: 144dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-images/dark-tablet-bg@1.5x.jpg");
+    }
+  }
+
+  @media (min-resolution: 192dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-images/dark-tablet-bg@2x.jpg");
+    }
+  }
+
+  @media (min-resolution: 288dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-images/dark-tablet-bg@3x.jpg");
+    }
+  }
+
+  .main-title {
+    width: 496px;
+    font-size: 56px;
+  }
+  .main-advantages-section,
+  .main-section-team,
+  .customers {
+    padding: 120px 0;
+  }
+
+  /* 2.Advantages */
+  /* 3. What are we doing */
+  /* 4. Our Team */
+  /* 5. Customers */
+  /* Portfolio */
+  /* Footer */
+
+  .footer-subscribe {
+    margin-top: 72px;
+  }
+  /* Modal window */
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  /* Header */
+  .menu-toggle,
+  .menu-container {
+    display: none;
+  }
+
+  .logo-studio {
+    margin-right: 120px;
+  }
+
+  .nav {
+    width: 454px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/**
+  |============================
+  | Desktop version
+  |============================
+*/
+@media (min-width: 1158px) {
+  .container,
+  .customers-container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  /* Header */
+  .address-box {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  /* Menu window */
+
+  /* Hero */
+  .title-background-box {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-images/people-office.jpg);
+  }
+
+  @media (min-resolution: 144dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-images/people-office\ 1@1.5x.jpg");
+    }
+  }
+
+  @media (min-resolution: 192dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-images/people-office\ 1@2x.jpg");
+    }
+  }
+
+  @media (min-resolution: 288dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-images/people-office\ 1@3x.jpg");
+    }
+  }
+
+  /* 2.Advantages */
+  /* 3. What are we doing */
+  /* 4. Our Team */
+  /* 5. Customers */
+  /* Portfolio */
+  /* Footer */
+
+  .footer-subscribe {
+  }
+  /* Modal window */
+}

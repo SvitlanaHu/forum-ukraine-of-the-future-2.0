@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="close">
+<g id="Ellipse 1">
+<circle cx="12" cy="12" r="12" fill="#E7E9FC"/>
+<circle cx="12" cy="12" r="11.5" stroke="black" stroke-opacity="0.1"/>
+</g>
+<g id="close-black-18dp (2) 1" clip-path="url(#clip0_297024_954)">
+<path id="Vector" d="M16 8.80571L15.1943 8L12 11.1943L8.80571 8L8 8.80571L11.1943 12L8 15.1943L8.80571 16L12 12.8057L15.1943 16L16 15.1943L12.8057 12L16 8.80571Z" fill="#2E2F42"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_297024_954">
+<rect width="8" height="8" fill="white" transform="translate(8 8)"/>
+</clipPath>
+</defs>
+</svg>
