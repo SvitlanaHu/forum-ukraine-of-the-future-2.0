@@ -97,6 +97,12 @@ input {
   overflow: hidden;
 }
 
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /*
 =========================================
       Header
@@ -134,6 +140,10 @@ input {
   |   Main
   |============================
 */
+main {
+  flex-grow: 1;
+}
+
 .title-box {
   font-size: 22px;
   text-align: center;
