@@ -144,14 +144,21 @@ main {
   flex-grow: 1;
 }
 
+.text-box {
+  padding: 40px 0;
+  background-color: var(--navy-blue);
+}
 .title-box {
   font-size: 22px;
   text-align: center;
+  color: var(--cloud);
 }
 
 .title-date {
+  padding-top: 20px;
   font-size: 14px;
   text-align: center;
+  color: var(--cloud);
 }
 
 /**
