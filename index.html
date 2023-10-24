@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./icon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./icon/forum-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--
       ================================
@@ -56,15 +56,14 @@
               <ul class="list ul-box">
                 <li>
                   <a
-                    class="link"
+                    class="link link-icon-header"
                     href="https://www.instagram.com/waldemar.heisler"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
                   >
                     <img
-                      src="./img/forum.jpg"
-                      srcset="./img/forum@2x.jpg"
+                      src="./icon/forum-logo.png"
                       class="logo_image__3N3-k"
                       alt="Forum-2.0"
                       width="40"
@@ -73,17 +72,17 @@
                 </li>
                 <li>
                   <a
-                    class="link"
+                    class="link link-icon-header"
                     href="https://www.instagram.com/waldemar.heisler"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
                   >
                     <img
-                      src="./icon/favicon.svg"
+                      src="./icon/logo-wh-full.png"
                       class="logo_image__3N3-k"
                       alt="Forum-2.0"
-                      width="40"
+                      height="40"
                     />
                   </a>
                 </li>
@@ -221,6 +220,9 @@
         </section>
         <section class="container">
           <h2 class="gallery-title" lang="uk-UA">Галерея</h2>
+          <h3 class="gallery-title" lang="uk-UA">
+            фотографа Вальдемара Гайслера
+          </h3>
         </section>
       </main>
       <footer class="footer-container">
@@ -272,5 +274,26 @@
         </section>
       </footer>
     </div>
+
+        <!-- Menu window. -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="icon-modal close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="list navigation-box mobile-menu">
+        <li>
+          <a class="link menu-link current" href="./index.html"> Studio </a>
+        </li>
+        <li>
+          <a class="link menu-link" href="./portfolio.html"> Portfolio </a>
+        </li>
+        <li>
+          <a class="link menu-link" href=""> Contacts </a>
+        </li>
+      </ul>
+      <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
