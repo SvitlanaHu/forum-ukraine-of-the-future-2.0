@@ -1,7 +1,6 @@
 :root {
   --cloud: #f4f4fd;
-  --cornflower: #e7e9fc;
-  --dairy: #fcfcfc;
+  --orange: #ffb648;
   --iris: #4d5ae5;
   --green: #31d0aa;
   --light-slate: #8e8f99;
@@ -31,10 +30,10 @@ body {
 
 .container {
   /* min-width: 320px; */
-  max-width: 1400px;
+  min-width: 320px;
+  max-width: 428px;
   padding: 10px;
   margin: 0 auto;
-  /* border: 4px solid var(--green); */
 }
 
 .link {
@@ -109,7 +108,14 @@ input {
 =========================================
 */
 .header-container {
-  background-color: var(--iris);
+  background-color: var(--ocean);
+}
+
+.header-content {
+  padding: 10px 0;
+}
+.text-box {
+  background-color: var(--slate);
 }
 
 .header-box {
@@ -158,16 +164,13 @@ input {
 */
 main {
   flex-grow: 1;
-}
-
-.text-box {
   background-color: var(--navy-blue);
 }
 
 .title-background-box {
   width: 100vw;
   margin: 0 auto;
-  padding: 170px 0;
+  padding: 70px 0;
   background: var(--navy-blue);
   background-image: linear-gradient(
       to bottom,
@@ -215,8 +218,15 @@ main {
 
 .title-box {
   font-size: 22px;
+  line-height: 1.07;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   color: var(--cloud);
+}
+
+.title-oringe {
+  color: var(--orange);
 }
 
 .title-date {
@@ -239,6 +249,25 @@ main {
   justify-content: space-between;
   row-gap: 20px;
 }
+
+.figures {
+  margin: 0;
+}
+
+.link-download {
+  fill: var(--cloud);
+}
+
+.signature-download {
+  color: var(--navy-blue);
+}
+
+.signature-download:hover,
+.signature-download:focus {
+  color: var(--cloud);
+  cursor: pointer;
+}
+
 /**
   |============================
   |   Footer
@@ -246,10 +275,11 @@ main {
 */
 .footer-container {
   padding: 30px 0;
-  background-color: var(--navy-blue);
+  background-color: var(--ocean);
 }
 
 .footer-contact-title {
+  margin-left: 300px;
   font-size: 22px;
   color: var(--white);
 }
@@ -257,10 +287,29 @@ main {
 .footer-button-box {
   justify-content: space-between;
   padding-top: 20px;
+  row-gap: 20px;
 }
 
 .footer-contact-box {
   gap: 20px;
+}
+
+.link-icon-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  color: var(--ocean);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-icon-footer:hover,
+.link-icon-footer:focus {
+  background-color: var(--green);
+  cursor: pointer;
+  color: var(--orange);
 }
 
 .footer-contacts_type {
@@ -277,7 +326,7 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--iris);
+  background-color: var(--navy-blue);
   fill: var(--cloud);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -295,7 +344,7 @@ main {
 .download-button {
   display: block;
   padding: 8px 16px;
-  background-color: var(--iris);
+  background-color: var(--navy-blue);
   color: var(--white);
   border-radius: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -309,10 +358,14 @@ main {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.footer-icon-download {
+  fill: var(--cloud);
+}
+
 /* .consultation-button {
   display: block;
   padding: 8px 16px;
-  background-color: var(--iris);
+  background-color: var(--ocean);
   color: var(--white);
   border-radius: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -357,4 +410,116 @@ main {
   border: none;
   border-radius: 50%;
   outline: none;
+}
+
+/**
+  |============================
+  | Adaptation
+  |============================
+*/
+
+@media (max-width: 767px) {
+  .gallery-img {
+    text-align: center;
+  }
+}
+
+@media (min-width: 428px) {
+}
+
+/**
+  |============================
+  | Tablet version
+  |============================
+*/
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  /* Hero */
+  .title-background-box {
+    padding: 140px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/1800/WH307-tablet.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../img/1800/WH307-tablet\ @2x.jpg");
+    }
+  }
+
+  @media (min-resolution: 288dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../img/1800/WH307-tablet\ @3x.jpg");
+    }
+  }
+
+  .title-box {
+    font-size: 26px;
+  }
+}
+
+/**
+  |============================
+  | Desktop version
+  |============================
+*/
+@media (min-width: 1158px) {
+  .container,
+  .customers-container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+  /* Hero */
+  .title-background-box {
+    padding: 200px 0;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../img/1800/WH307-1800.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../img/1800/WH307-desktop@2x.jpg");
+    }
+  }
+
+  @media (min-resolution: 288dpi) {
+    .title-background-box {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/hero-images/people-office\ 1@3x.jpg");
+    }
+  }
+
+  .title-box {
+    font-size: 36px;
+  }
 }
