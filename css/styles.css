@@ -232,7 +232,7 @@ main {
   |============================
 */
 .gallery-list {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: stretch;
@@ -271,7 +271,7 @@ main {
 }
 
 .link-icon-box {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
