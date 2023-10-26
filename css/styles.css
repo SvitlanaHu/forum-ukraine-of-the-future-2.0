@@ -5,7 +5,8 @@
   --green: #31d0aa;
   --light-slate: #8e8f99;
   --navy-blue: #2e2f42;
-  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --navy-blue-modal-025: rgba(46, 47, 66, 0.25);
+  --navy-blue-modal-06: rgba(46, 47, 66, 0.6);
   --ocean: #404bbf;
   --white: #fff;
   --slate: #434455;
@@ -398,6 +399,171 @@ main {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 } */
+
+/**
+  |============================
+  |   Slide show
+  |============================
+*/
+.wrapper {
+  background: var(--navy-blue);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slides {
+  position: relative;
+  display: block;
+}
+
+.slides:focus {
+  outline: 0;
+}
+
+.slides .figure {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
+}
+
+.slides .figure:first-child {
+  position: relative;
+}
+
+.slides .figure .img {
+  display: block;
+}
+
+.slides .show {
+  z-index: 3;
+  opacity: 1;
+}
+
+.slides .figcaption {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  bottom: 0.75em;
+  right: 0.35em;
+  padding: 0.25em;
+  color: var(--cloud);
+  background: var(--navy-blue);
+  background: var(--navy-blue-modal-025);
+  border-radius: 2px;
+}
+
+.slides .figcaption .a {
+  color: #fff;
+}
+
+.next,
+.prev {
+  color: #fff;
+  position: absolute;
+  background: var(--navy-blue);
+  background: var(--navy-blue-modal-06);
+  top: 50%;
+  z-index: 4;
+  font-size: 2em;
+  margin-top: -1.2em;
+  opacity: 0.5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.next:hover,
+.prev:hover,
+.nav .pin:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.next {
+  right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.prev {
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.nav {
+  text-align: center;
+  line-height: 25px;
+  position: relative;
+}
+
+.nav .pin {
+  background: #000;
+  color: #fff;
+  position: relative;
+  border: none;
+  outline: none;
+}
+
+.nav .ul {
+  margin: 0;
+  padding: 0;
+}
+
+.nav .ul > .li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.nav .ul > .li .pin {
+  width: 15px;
+  height: 20px;
+  line-height: 25px;
+  font-size: 32px;
+  opacity: 0.7;
+}
+
+.nav .pin.play {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  font-size: 15px;
+  line-height: 15px;
+  right: 0;
+  bottom: 0;
+}
+
+.nav .pin.play:before {
+  content: "\25B6";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav .pin.play.on:before {
+  content: "\23f8";
+}
+
+.nav .ul > .li .pin:before {
+  content: "\2022";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav .ul > .li .button.selected {
+  opacity: 1;
+}
 
 /**
   |============================
