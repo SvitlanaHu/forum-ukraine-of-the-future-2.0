@@ -8,7 +8,7 @@
   max-width: 1140px;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-auto-rows: 240px;
-  grid-gap: 12px;
+  grid-gap: 25px;
   justify-content: center;
   padding: 0;
   list-style: none;
@@ -23,7 +23,7 @@
 }
 
 .gallery__image:hover {
-  transform: scale(1.03);
+  transform: scale(1.15);
 }
 
 .gallery__image {
