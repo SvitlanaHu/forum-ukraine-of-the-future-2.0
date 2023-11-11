@@ -49,16 +49,16 @@ export const galleryItems = [
 
 for (let i = 10; i < 100; i++) {
   const item = {
-    preview: `/img/min-size/WH0${i}-min.jpg`,
-    original: `/img/full-size/WH0${i}.jpg`,
+    preview: `./img/min-size/WH0${i}-min.jpg`,
+    original: `./img/full-size/WH0${i}.jpg`,
     description: `Forum Ukraine of the future 2.0. Slide-0${i}`,
   }
   galleryItems.push(item);
 }
 for (let i = 100; i < 753; i++) {
   const item = {
-    preview: `/img/min-size/WH${i}-min.jpg`,
-    original: `/img/full-size/WH${i}.jpg`,
+    preview: `./img/min-size/WH${i}-min.jpg`,
+    original: `./img/full-size/WH${i}.jpg`,
     description: `Forum Ukraine of the future 2.0. Slide-${i}`,
   }
   galleryItems.push(item);
