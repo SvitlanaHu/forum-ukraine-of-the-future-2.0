@@ -2,870 +2,1716 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="./icon/forum-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--
-      ================================
-          Style normalization link
-      ================================
-    -->
+    <!-- Style normalization link -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-    <!--
-      ================================
-          Fonts
-      ================================
-    -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!--
-        ================================
-           Connecting additional pages
-        ================================
-      -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!--
-        ================================
-           Page's name
-        ================================
-      -->
+    <!-- Connecting the styles of the basicLightbox modal window library. -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
 
-    <title>Studio</title>
+    <!-- Connecting additional pages -->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <!-- Page's name -->
+    <title>Forum-2.0-gallery</title>
+    <meta name="title" content="FORUM 2.0" />
+    <meta
+      name="description"
+      content="Photos that cover this event, with the possibility of downloading them both individually and in a package"
+    />
   </head>
 
   <body>
-    <header class="section header">
-      <!--
+    <div class="page-container">
+      <header class="header-container header_header__1pTAI" id="header">
+        <!-- 
         ================================
            Top line
         ================================
       -->
-      <div class="top-line placement-in-a-line container">
-        <nav class="placement-in-a-line nav">
-          <!--Logo-->
-          <a class="link logo" href="./index.html">
-            web<span class="logo-studio">Studio</span>
-          </a>
+        <div class="container header-box">
+          <div class="header-content">
+            <nav class="nav-box">
+              <ul class="list ul-box">
+                <!-- Link on FORUM-instagram -->
+                <li>
+                  <a
+                    class="link link-icon-header"
+                    id="home"
+                    href="https://www.instagram.com/forum_ukraine"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <img
+                      src="./icon/forum-logo.png"
+                      class="logo_image__3N3-k"
+                      alt="Forum-2.0"
+                      width="40"
+                    />
+                  </a>
+                </li>
 
-          <button
-            type="button"
-            class="menu-toggle js-open-menu menu-button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="menu-icon" width="32" height="22">
-              <use href="./images/icons.svg#menu-hamburger"></use>
-            </svg>
-          </button>
+                <!-- Link on WALDEMAR-instagram -->
+                <li>
+                  <a
+                    class="link link-icon-header"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc5SlJHDdI7aZVcLVKL6sFHVgY6_Isk6or-LfZCqPMDGJ0RqA/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                  >
+                    <img
+                      src="./icon/logo-wh-full.png"
+                      class="logo_image__3N3-k"
+                      alt="Forum-2.0"
+                      height="40"
+                    />
+                  </a>
+                </li>
+              </ul>
 
-          <ul class="placement-in-a-line list navigation-box menu-hidden">
-            <li>
-              <a class="link text-link current" href="./index.html"> Studio </a>
-            </li>
-            <li>
-              <a class="link text-link" href="./portfolio.html"> Portfolio </a>
-            </li>
-            <li>
-              <a class="link text-link" href=""> Contacts </a>
-            </li>
-          </ul>
-        </nav>
+              <ul class="list placement-in-a-line ul-box">
+                <!-- Link on slide-show.html -->
+                <li>
+                  <a
+                    href="./slide-show.html"
+                    class="link link-icon-box download-button"
+                  >
+                    <svg class="icon" width="28" height="22">
+                      <use href="./img/icons.svg#icon-slider"></use>
+                    </svg>
+                  </a>
+                </li>
 
-        <address class="contacts">
-          <ul class="list address-box menu-hidden">
-            <li class="address-item">
-              <a class="link contact-box" href="mailto:info@devstudio.com">
-                info@devstudio.com
-              </a>
-            </li>
-
-            <li>
-              <a class="link contact-box" href="tel:+110001111111">
-                +11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
-      </div>
-    </header>
-
-    <main>
-      <!--
-        =============================================
-           1. Effective Solutions for Your Business (Hero)
-        =============================================
-      -->
-      <section class="title-background-box section">
-        <div class="container title-box">
-          <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button
-            data-modal-open
-            class="main-button data-modal-open"
-            type="button"
-          >
-            Order Service
-          </button>
+                <!-- Link on download folder -->
+                <li>
+                  <a
+                    class="download-button link-icon-box link"
+                    href="https://drive.google.com/file/d/1qcmwr5aSBeF3zSwxdc0LXt4QK8vXJUWV/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Google form"
+                    lang="uk-UA"
+                    download=""
+                  >
+                    <svg class="icon" width="28" height="22">
+                      <use href="./img/icons.svg#icon-download2"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
-      </section>
+      </header>
 
-      <!--============================================= 
-      2. Advantages
-      ============================================= -->
-      <section class="main-advantages-section section">
-        <div class="container">
-          <h2 class="visually-hidden">Advantages</h2>
-          <ul class="list advantages-gap">
-            <li class="advantages-card">
-              <div class="icon-box">
-                <svg class="advantages-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-s2-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="advantages-title">Strategy</h3>
-              <p class="advantages-text">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
-              </p>
-            </li>
+      <main>
+        <section class="text-box">
+          <div class="container title-background-box">
+            <h1 class="title-box" lang="uk-UA">
+              Форум <span class="title-oringe">Україна майбутнього 2.0</span>
+            </h1>
+            <h2 class="title-date" lang="uk-UA">21 жовтня 2023</h2>
+          </div>
+        </section>
 
-            <li class="advantages-card">
-              <div class="icon-box">
-                <svg class="advantages-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-s2-clock"></use>
-                </svg>
-              </div>
-              <h3 class="advantages-title">Punctuality</h3>
-              <p class="advantages-text">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
-              </p>
-            </li>
-
-            <li class="advantages-card">
-              <div class="icon-box">
-                <svg class="advantages-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-s2-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="advantages-title">Diligence</h3>
-              <p class="advantages-text">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
-              </p>
-            </li>
-
-            <li class="advantages-card">
-              <div class="icon-box">
-                <svg class="advantages-icon" width="64" height="64">
-                  <use href="./images/icons.svg#icon-s2-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="advantages-title">Technologies</h3>
-              <p class="advantages-text">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      -->
-
-      <!--
-        =============================================
-           3. What are we doing
-        =============================================
-      -->
-      <section class="main-opportunities-section section">
-        <div class="container">
-          <h2 class="opportunities-title">What are we doing</h2>
-          <ul class="list placement-in-a-line advantages-gap">
-            <li class="opportunities-card">
-              <img
-                src="./images/main-images/rectangle171.jpg"
-                srcset="
-                  ./images/main-images/rectangle171   1x,
-                  ./images/main-images/img-1@1.5x.jpg 1.5x,
-                  ./images/main-images/img-1@2x.jpg   2x,
-                  ./images/main-images/img-1@3x.jpg   3x
-                "
-                alt="desktop"
-                width="360"
-              />
-            </li>
-
-            <li class="opportunities-card">
-              <img
-                src="./images/main-images/rectangle172.jpg"
-                srcset="
-                  ./images/main-images/rectangle1712  1x,
-                  ./images/main-images/img-2@1.5x.jpg 1.5x,
-                  ./images/main-images/img-2@2x.jpg   2x,
-                  ./images/main-images/img-2@3x.jpg   3x
-                "
-                alt="mobile format"
-                width="360"
-              />
-            </li>
-
-            <li class="opportunities-card">
-              <img
-                src="./images/main-images/rectangle173.jpg"
-                srcset="
-                  ./images/main-images/rectangle173   1x,
-                  ./images/main-images/img-3@1.5x.jpg 1.5x,
-                  ./images/main-images/img-3@2x.jpg   2x,
-                  ./images/main-images/img-3@3x.jpg   3x
-                "
-                alt="mobile synchronized with the computer"
-                width="360"
-              />
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <!--
-        =============================================
-           4. Our Team
-        =============================================
-      -->
-      <section class="main-section-team section">
-        <div class="container">
-          <h2 class="opportunities-title">Our Team</h2>
-          <ul class="list placement-in-a-line advantages-gap">
-            <li class="card">
-              <img
-                src="./images/main-images/img01.jpg"
-                srcset="
-                  ./images/main-images/img01.jpg      1x,
-                  ./images/main-images/img01@1.5x.jpg 1.5x,
-                  ./images/main-images/img01@2x.jpg   2x,
-                  ./images/main-images/img01@3x.jpg   3x
-                "
-                alt="M.Guerrero's photo"
-                width="264"
-              />
-              <div class="description-card">
-                <h3 class="card-name">Mark Guerrero</h3>
-                <p class="card-text">Product Designer</p>
-                <ul
-                  class="placement-in-a-line list social-links social-team-card"
+        <section class="container">
+          <h2 class="gallery-title" lang="uk-UA">Галерея</h2>
+          <div class="gallery-box">
+            <ul class="gallery-list list">
+              <li>
+                <a class="link" href="./img/full-size/WH001.jpg" target="_blank"
+                  ><figure id="Slide-001" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH001-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-001"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH001.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
                 >
-                  <li class="social-card-item">
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH002.jpg" target="_blank"
+                  ><figure id="Slide-002" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH002-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-002"
+                      height="166"
+                    />
                     <a
-                      class="link link-team-icons"
-                      href="https://www.instagram.com/"
-                      target="_blank"
+                      class="link-download link"
+                      href="./img/full-size/WH002.jpg"
+                      download
                     >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-instagram"></use>
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
                       </svg>
                     </a>
-                  </li>
-
-                  <li class="social-card-item">
-                    <a
-                      class="link link-team-icons"
-                      href="https://twitter.com/"
-                      target="_blank"
-                    >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social-card-item">
-                    <a
-                      class="link link-team-icons"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                    >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social-card-item">
-                    <a
-                      class="link link-team-icons"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                    >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/main-images/img12.jpg"
-                srcset="
-                  ./images/main-images/img12.jpg      1x,
-                  ./images/main-images/img12@1.5x.jpg 1.5x,
-                  ./images/main-images/img12@2x.jpg   2x,
-                  ./images/main-images/img12@3x.jpg   3x
-                "
-                alt="T.Ford's photo"
-                width="264"
-              />
-              <div class="description-card">
-                <h3 class="card-name">Tom Ford</h3>
-                <p class="card-text">Frontend Developer</p>
-                <ul
-                  class="placement-in-a-line list social-links social-team-card"
+                  </figure></a
                 >
-                  <li class="social-card-item">
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH003.jpg" target="_blank"
+                  ><figure id="Slide-003" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH003-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-003"
+                      height="166"
+                    />
                     <a
-                      class="link link-team-icons"
-                      href="https://www.instagram.com/"
-                      target="_blank"
+                      class="link-download link"
+                      href="./img/full-size/WH003.jpg"
+                      download
                     >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-instagram"></use>
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
                       </svg>
                     </a>
-                  </li>
-
-                  <li class="social-card-item">
-                    <a
-                      class="link link-team-icons"
-                      href="https://twitter.com/"
-                      target="_blank"
-                    >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social-card-item">
-                    <a
-                      class="link link-team-icons"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                    >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social-card-item">
-                    <a
-                      class="link link-team-icons"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                    >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/main-images/img13.jpg"
-                srcset="
-                  ./images/main-images/img13.jpg      1x,
-                  ./images/main-images/img13@1.5x.jpg 1.5x,
-                  ./images/main-images/img13@2x.jpg   2x,
-                  ./images/main-images/img13@3x.jpg   3x
-                "
-                alt="C.Garcia's photo"
-                width="264"
-              />
-              <div class="description-card">
-                <h3 class="card-name">Camila Garcia</h3>
-                <p class="card-text">Marketing</p>
-                <ul
-                  class="placement-in-a-line list social-links social-team-card"
+                  </figure></a
                 >
-                  <li class="social-card-item">
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH004.jpg" target="_blank"
+                  ><figure id="Slide-004" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH004-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-004"
+                      height="166"
+                    />
                     <a
-                      class="link link-team-icons"
-                      href="https://www.instagram.com/"
-                      target="_blank"
+                      class="link-download link"
+                      href="./img/full-size/WH004.jpg"
+                      download
                     >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-instagram"></use>
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
                       </svg>
                     </a>
-                  </li>
-
-                  <li class="social-card-item">
-                    <a
-                      class="link link-team-icons"
-                      href="https://twitter.com/"
-                      target="_blank"
-                    >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social-card-item">
-                    <a
-                      class="link link-team-icons"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                    >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social-card-item">
-                    <a
-                      class="link link-team-icons"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                    >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-
-            <li class="card">
-              <img
-                src="./images/main-images/img14.jpg"
-                srcset="
-                  ./images/main-images/img14.jpg      1x,
-                  ./images/main-images/img14@1.5x.jpg 1.5x,
-                  ./images/main-images/img14@2x.jpg   2x,
-                  ./images/main-images/img14@3x.jpg   3x
-                "
-                alt="D.Wilson's photo"
-                width="264"
-              />
-              <div class="description-card">
-                <h3 class="card-name">Daniel erWilson</h3>
-                <p class="card-text">UI Design</p>
-                <ul
-                  class="placement-in-a-line list social-links social-team-card"
+                  </figure></a
                 >
-                  <li class="social-card-item">
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH005.jpg" target="_blank"
+                  ><figure id="Slide-005" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH005-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-005"
+                      height="166"
+                    />
                     <a
-                      class="link link-team-icons"
-                      href="https://www.instagram.com/"
-                      target="_blank"
+                      class="link-download link"
+                      href="./img/full-size/WH005.jpg"
+                      download
                     >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-instagram"></use>
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
                       </svg>
                     </a>
-                  </li>
-
-                  <li class="social-card-item">
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH006.jpg" target="_blank"
+                  ><figure id="Slide-006" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH006-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-006"
+                      height="166"
+                    />
                     <a
-                      class="link link-team-icons"
-                      href="https://twitter.com/"
-                      target="_blank"
+                      class="link-download link"
+                      href="./img/full-size/WH006.jpg"
+                      download
                     >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-twitter"></use>
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
                       </svg>
                     </a>
-                  </li>
-
-                  <li class="social-card-item">
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH007.jpg" target="_blank"
+                  ><figure id="Slide-007" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH007-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-007"
+                      height="166"
+                    />
                     <a
-                      class="link link-team-icons"
-                      href="https://www.facebook.com/"
-                      target="_blank"
+                      class="link-download link"
+                      href="./img/full-size/WH007.jpg"
+                      download
                     >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-facebook"></use>
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
                       </svg>
                     </a>
-                  </li>
-
-                  <li class="social-card-item">
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH008.jpg" target="_blank"
+                  ><figure id="Slide-008" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH008-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-008"
+                      height="166"
+                    />
                     <a
-                      class="link link-team-icons"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
+                      class="link-download link"
+                      href="./img/full-size/WH008.jpg"
+                      download
                     >
-                      <svg class="icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-f-linkedin"></use>
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
                       </svg>
                     </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH009.jpg" target="_blank"
+                  ><figure id="Slide-009" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH009-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-009"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH009.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH010.jpg" target="_blank"
+                  ><figure id="Slide-010" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH010-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-010"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH010.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
 
-      <!--   
-        /**
-          |============================
-          | 5. Customers
-          |============================
-        */-->
-      <section class="customers">
-        <div class="container customers-container">
-          <h2 class="opportunities-title">Customers</h2>
-          <ul class="list placement-in-a-line customers-list">
-            <li class="customers-link-list">
-              <a class="link customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-1"></use>
-                </svg>
-              </a>
-            </li>
+              <li>
+                <a class="link" href="./img/full-size/WH011.jpg" target="_blank"
+                  ><figure id="Slide-011" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH011-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-011"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH011.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH012.jpg" target="_blank"
+                  ><figure id="Slide-012" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH012-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-012"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH012.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH013.jpg" target="_blank"
+                  ><figure id="Slide-013" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH013-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-013"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH013.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH014.jpg" target="_blank"
+                  ><figure id="Slide-014" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH014-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-014"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH014.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH015.jpg" target="_blank"
+                  ><figure id="Slide-015" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH015-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-015"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH015.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH016.jpg" target="_blank"
+                  ><figure id="Slide-016" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH016-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-016"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH016.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH017.jpg" target="_blank"
+                  ><figure id="Slide-017" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH017-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-017"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH017.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH018.jpg" target="_blank"
+                  ><figure id="Slide-018" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH018-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-018"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH018.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH019.jpg" target="_blank"
+                  ><figure id="Slide-019" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH019-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-019"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH019.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH020.jpg" target="_blank"
+                  ><figure id="Slide-020" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH020-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-020"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH020.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
 
-            <li class="customers-link-list">
-              <a class="link customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-2"></use>
-                </svg>
-              </a>
-            </li>
+              <li>
+                <a class="link" href="./img/full-size/WH021.jpg" target="_blank"
+                  ><figure id="Slide-021" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH021-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-021"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH021.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH022.jpg" target="_blank"
+                  ><figure id="Slide-022" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH022-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-022"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH022.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH023.jpg" target="_blank"
+                  ><figure id="Slide-023" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH023-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-023"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH023.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH024.jpg" target="_blank"
+                  ><figure id="Slide-024" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH024-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-024"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH024.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH025.jpg" target="_blank"
+                  ><figure id="Slide-025" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH025-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-025"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH025.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH026.jpg" target="_blank"
+                  ><figure id="Slide-026" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH026-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-026"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH026.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH027.jpg" target="_blank"
+                  ><figure id="Slide-027" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH027-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-027"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH027.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH028.jpg" target="_blank"
+                  ><figure id="Slide-028" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH028-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-028"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH028.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH029.jpg" target="_blank"
+                  ><figure id="Slide-029" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH029-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-029"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH029.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH030.jpg" target="_blank"
+                  ><figure id="Slide-030" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH030-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-030"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH030.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
 
-            <li class="customers-link-list">
-              <a class="link customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-3"></use>
-                </svg>
-              </a>
-            </li>
+              <li>
+                <a class="link" href="./img/full-size/WH031.jpg" target="_blank"
+                  ><figure id="Slide-031" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH031-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-031"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH031.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH032.jpg" target="_blank"
+                  ><figure id="Slide-032" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH032-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-032"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH032.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH033.jpg" target="_blank"
+                  ><figure id="Slide-033" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH033-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-033"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH033.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH034.jpg" target="_blank"
+                  ><figure id="Slide-034" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH034-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-034"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH034.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH035.jpg" target="_blank"
+                  ><figure id="Slide-035" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH035-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-035"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH035.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH036.jpg" target="_blank"
+                  ><figure id="Slide-036" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH036-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-036"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH036.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH037.jpg" target="_blank"
+                  ><figure id="Slide-037" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH037-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-037"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH037.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH038.jpg" target="_blank"
+                  ><figure id="Slide-038" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH038-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-038"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH038.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH039.jpg" target="_blank"
+                  ><figure id="Slide-039" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH039-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-039"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH039.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH040.jpg" target="_blank"
+                  ><figure id="Slide-040" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH040-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-040"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH040.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
 
-            <li class="customers-link-list">
-              <a class="link customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-4"></use>
-                </svg>
-              </a>
-            </li>
+              <li>
+                <a class="link" href="./img/full-size/WH041.jpg" target="_blank"
+                  ><figure id="Slide-041" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH041-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-041"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH041.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH042.jpg" target="_blank"
+                  ><figure id="Slide-042" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH042-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-042"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH042.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH043.jpg" target="_blank"
+                  ><figure id="Slide-043" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH043-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-043"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH043.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH044.jpg" target="_blank"
+                  ><figure id="Slide-044" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH044-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-044"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH044.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH045.jpg" target="_blank"
+                  ><figure id="Slide-045" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH045-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-045"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH045.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH046.jpg" target="_blank"
+                  ><figure id="Slide-046" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH046-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-046"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH046.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH047.jpg" target="_blank"
+                  ><figure id="Slide-047" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH047-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-047"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH047.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH048.jpg" target="_blank"
+                  ><figure id="Slide-048" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH048-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-048"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH048.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH049.jpg" target="_blank"
+                  ><figure id="Slide-049" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH049-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-049"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH049.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH050.jpg" target="_blank"
+                  ><figure id="Slide-050" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH050-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-050"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH050.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
 
-            <li class="customers-link-list">
-              <a class="link customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-5"></use>
-                </svg>
-              </a>
-            </li>
+              <li>
+                <a class="link" href="./img/full-size/WH051.jpg" target="_blank"
+                  ><figure id="Slide-051" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH051-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-051"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH051.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH052.jpg" target="_blank"
+                  ><figure id="Slide-052" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH052-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-052"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH052.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH053.jpg" target="_blank"
+                  ><figure id="Slide-053" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH053-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-053"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH053.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH054.jpg" target="_blank"
+                  ><figure id="Slide-054" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH054-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-054"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH054.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH055.jpg" target="_blank"
+                  ><figure id="Slide-055" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH055-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-055"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH055.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH056.jpg" target="_blank"
+                  ><figure id="Slide-056" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH056-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-056"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH056.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH057.jpg" target="_blank"
+                  ><figure id="Slide-057" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH057-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-057"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH057.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH058.jpg" target="_blank"
+                  ><figure id="Slide-058" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH058-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-058"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH058.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH059.jpg" target="_blank"
+                  ><figure id="Slide-059" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH059-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-059"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH059.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH060.jpg" target="_blank"
+                  ><figure id="Slide-060" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH060-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-060"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH060.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
 
-            <li class="customers-link-list">
-              <a class="link customers-link" href="">
-                <svg class="customers-icon" width="104" height="56">
-                  <use href="./images/icons.svg#icon-Logo-6"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </main>
+              <li>
+                <a class="link" href="./img/full-size/WH061.jpg" target="_blank"
+                  ><figure id="Slide-061" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH061-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-061"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH061.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH062.jpg" target="_blank"
+                  ><figure id="Slide-062" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH062-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-062"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH062.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH063.jpg" target="_blank"
+                  ><figure id="Slide-063" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH063-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-063"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH063.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH064.jpg" target="_blank"
+                  ><figure id="Slide-064" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH064-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-064"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH064.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH065.jpg" target="_blank"
+                  ><figure id="Slide-065" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH065-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-065"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH065.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a class="link" href="./img/full-size/WH066.jpg" target="_blank"
+                  ><figure id="Slide-066" class="figures">
+                    <img
+                      class="gallery-img"
+                      src="./img/min-size/WH066-min.jpg"
+                      alt="Forum Ukraine of the future 2.0. Slide-066"
+                      height="166"
+                    />
+                    <a
+                      class="link-download link"
+                      href="./img/full-size/WH066.jpg"
+                      download
+                    >
+                      <svg class="icon-download" width="18" height="18">
+                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <span class="signature-download">Завантажити</span>
+                      </svg>
+                    </a>
+                  </figure></a
+                >
+              </li>
+              <li>
+                <a href="./img/full-size/WH067.jpg" target="_blank"
+                  ><img
+                    src="./img/full-size/WH067.jpg"
+                    target="_blank"
+                    alt="Forum Ukraine of the future 2.0. Slide-067"
+                    height="176"
+                /></a>
+              </li>
+              <li>
+                <a href="./img/full-size/WH068.jpg" target="_blank"
+                  ><img
+                    src="./img/full-size/WH068.jpg"
+                    target="_blank"
+                    alt="Forum Ukraine of the future 2.0. Slide-068"
+                    height="176"
+                /></a>
+              </li>
+              <li>
+                <a href="./img/full-size/WH069.jpg" target="_blank"
+                  ><img
+                    src="./img/full-size/WH069.jpg"
+                    target="_blank"
+                    alt="Forum Ukraine of the future 2.0. Slide-069"
+                    height="176"
+                /></a>
+              </li>
+              <li>
+                <a href="./img/full-size/WH070.jpg" target="_blank"
+                  ><img
+                    src="./img/full-size/WH070.jpg"
+                    target="_blank"
+                    alt="Forum Ukraine of the future 2.0. Slide-070"
+                    height="176"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <!-- /**
+      |============================
+      | Footer
+      |============================
+    */ -->
+      <footer class="footer-container">
+        <section class="container contacts_type contacts_container">
+          <h2 class="footer-contact-title" lang="uk-UA">Контакти:</h2>
+          <div class="placement-in-a-line footer-button-box">
+            <ul class="list placement-in-a-line footer-contact-box">
+              <li class="footer-contacts_type">
+                <a
+                  class="link link-icon-box"
+                  href="https://t.me/waldemarh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Telegram"
+                >
+                  <svg class="social-icon" width="38px" height="38px">
+                    <use href="./img/icons.svg#icon-telegram"></use>
+                  </svg>
+                </a>
+              </li>
 
-    <!--
-      =============================================
-          Footer
-      =============================================
-    -->
-    <footer class="footer-box section">
-      <div class="container footer-container">
-        <div class="footer-logo-box footer-item">
-          <a class="link logo logo-footer" href="./index.html">
-            Web<span class="logo-studio-footer">Studio</span>
-          </a>
+              <li class="footer-contacts_type">
+                <a
+                  class="link link-icon-box"
+                  href="https://www.instagram.com/waldemar.heisler"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg class="social-icon" width="24px" height="24px">
+                    <use href="./img/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
 
-          <p class="paragraf-box">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-
-        <div class="footer-item footer-links">
-          <p class="social-title">Social media</p>
-          <ul class="placement-in-a-line list social-footer-links">
-            <li class="social-links-list">
+              <li>
+                <a
+                  class="link link-icon-footer"
+                  href="#home"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <img
+                    src="./icon/forum-logo.png"
+                    class="logo_image__3N3-k"
+                    alt="Forum-2.0"
+                    width="30"
+                  />
+                  Повернутися на початок сторінки
+                </a>
+              </li>
+            </ul>
+            <div>
               <a
-                class="link link-icons"
-                href="https://www.instagram.com/"
+                class="download-button link"
+                href="https://drive.google.com/file/d/1qcmwr5aSBeF3zSwxdc0LXt4QK8vXJUWV/view?usp=sharing"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Google form"
+                lang="uk-UA"
+                download=""
               >
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-f-instagram"></use>
+                <svg class="footer-icon-download" width="18" height="18">
+                  <use href="./img/icons.svg#icon-download"></use>
                 </svg>
-              </a>
-            </li>
-
-            <li class="social-links-list">
-              <a
-                class="link link-icons"
-                href="https://twitter.com/"
-                target="_blank"
+                Завантажити усі світлини</a
               >
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-f-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-links-list">
-              <a
-                class="link link-icons"
-                href="https://www.facebook.com/"
-                target="_blank"
-              >
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-f-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-links-list">
-              <a
-                class="link link-icons"
-                href="https://www.linkedin.com/"
-                target="_blank"
-              >
-                <svg class="icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-f-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-subscribe footer-item">
-          <p class="social-form-title">Subscribe</p>
-          <form class="footer-form">
-            <label class="social-title">
-              <input
-                class="subscribe-imput"
-                type="email"
-                name="usermail"
-                placeholder="E-mail"
-                required
-              />
-            </label>
-            <button class="subscribe-button" type="submit">
-              Subscribe
-              <svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-plane"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Modal window. -->
-    <div data-modal class="data-modal is-hidden">
-      <div class="modal-card">
-        <button data-modal-close type="button" class="data-modal-close">
-          <svg class="icon-modal" width="8" height="8">
-            <use href="./images/icons.svg#icon-close"></use>
-          </svg>
-        </button>
-
-        <p class="form-title">Leave your contacts and we will call you back</p>
-
-        <form class="form-box">
-          <div class="form-name-box">
-            <label class="form-subtitle" for="user-name"> Name</label>
-            <div class="form-person-box">
-              <input
-                class="form-imput"
-                type="text"
-                id="user-name"
-                name="user-name"
-                required
-              />
-              <svg class="input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-person"></use>
-              </svg>
             </div>
           </div>
-
-          <div class="form-name-box">
-            <label class="form-subtitle" for="user-phone"> Phone</label>
-            <div class="form-person-box">
-              <input
-                class="form-imput"
-                type="tel"
-                id="user-phone"
-                name="user-phone"
-                required
-              />
-              <svg class="input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
-          </div>
-
-          <div class="form-name-box">
-            <label class="form-subtitle" for="user-email"> Email</label>
-            <div class="form-person-box">
-              <input
-                class="form-imput"
-                type="email"
-                id="user-email"
-                name="user-email"
-                required
-              />
-              <svg class="input-icon" width="18" height="24">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-            </div>
-          </div>
-
-          <div class="form-name-boxarea">
-            <label class="form-subtitle" for="user-comment"> Comment</label>
-            <textarea
-              class="form-textarea"
-              id="user-comment"
-              name="user-comment"
-              rows="5"
-              placeholder="Text input"
-            >
-            </textarea>
-          </div>
-
-          <div class="form-accept-box">
-            <input
-              class="form-accept visually-hidden"
-              type="checkbox"
-              id="user-privacy"
-              name="user-privacy"
-              value="true"
-              required
-            />
-            <label class="form-text-accept" for="user-privacy">
-              <span class="user-privacy-box">
-                <svg class="check-mark-box" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check-mark"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy link" href="">Privacy Policy</a>
-            </label>
-          </div>
-
-          <button class="form-button" type="submit">Send</button>
-        </form>
-      </div>
+        </section>
+      </footer>
     </div>
 
     <!-- Menu window. -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg class="icon-modal close-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
 
-      <ul class="list navigation-box mobile-menu">
-        <li>
-          <a class="link menu-link current" href="./index.html"> Studio </a>
-        </li>
-        <li>
-          <a class="link menu-link" href="./portfolio.html"> Portfolio </a>
-        </li>
-        <li>
-          <a class="link menu-link" href=""> Contacts </a>
-        </li>
-      </ul>
-
-      <address class="contacts">
-        <ul class="list address-box-hidden">
-          <li>
-            <a class="link contact-number" href="tel:+110001111111">
-              +11 (000) 111-11-11
-            </a>
-          </li>
-          <li class="address-item contact-mail">
-            <a class="link contact-box" href="mailto:info@devstudio.com">
-              info@devstudio.com
-            </a>
-          </li>
-        </ul>
-
-        <ul
-          class="placement-in-a-line list social-links icon-link social-team-card"
-        >
-          <li class="social-card-item">
-            <a
-              class="link link-team-icons"
-              href="https://www.instagram.com/"
-              target="_blank"
-            >
-              <svg class="icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-f-instagram"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social-card-item">
-            <a
-              class="link link-team-icons"
-              href="https://twitter.com/"
-              target="_blank"
-            >
-              <svg class="icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-f-twitter"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social-card-item">
-            <a
-              class="link link-team-icons"
-              href="https://www.facebook.com/"
-              target="_blank"
-            >
-              <svg class="icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-f-facebook"></use>
-              </svg>
-            </a>
-          </li>
-
-          <li class="social-card-item">
-            <a
-              class="link link-team-icons"
-              href="https://www.linkedin.com/"
-              target="_blank"
-            >
-              <svg class="icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-f-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </address>
-    </div>
-
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="./js/mobile-menu.js"></script>
-    <script src="./js/modal.js"></script>
+    <!-- Connecting the script of the basicLightbox modal window library. -->
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <!-- <script src="./js/gallery.js"></script> -->
   </body>
 </html>
