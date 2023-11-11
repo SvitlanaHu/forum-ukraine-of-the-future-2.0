@@ -35,7 +35,7 @@ function createGallery(galleryItems) {
                       download
                     >
                       <svg class="icon-download" width="18" height="18">
-                        <use href="./img/symbol-defs.svg#icon-download"></use>
+                        <use href="img/symbol-defs.svg#icon-download"></use>
                         <span class="signature-download">Завантажити</span>
                       </svg>
                     </a>
